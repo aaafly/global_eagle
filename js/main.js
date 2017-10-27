@@ -5,7 +5,7 @@ var temperatures = [];
 function JSON_CALLBACK(json) {
   var items = json.query.results.channel.item.forecast.reverse();
   var html = '';
-  console.log('items', items);
+
   $.each(items, function (key, val) {
     var mid = Math.round((parseInt(val.high) + parseInt(val.low)) / 2);
     temperatures.push({
@@ -14,10 +14,11 @@ function JSON_CALLBACK(json) {
     });
     html += '<li><span>' + mid + '</span><span>' + val.date + '</span></li>'
   });
-  console.log('json', json);
-  console.log('temperatures', temperatures);
-  $('#temperatures-list .loading-indicator').hide();
+
+  $('.loading-indicator').hide();
+  $('.waiting-loading').removeClass('hide');
   $('#temperatures-list ul').append(html);
+
   calculateStats();
 }
 
@@ -68,9 +69,7 @@ function getCurrentDate() {
 }
 
 function getMonthFromInt(month) {
-  var mS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-
-  return mS[month];
+  return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'][month];
 }
 
 $('#add-temperature button').click(function () {
@@ -89,4 +88,3 @@ $('#add-temperature button').click(function () {
     $('#temperatures-list ul').prepend('<li><span>' + newTemp + '</span><span>' + date + '</span></li>');
   }
 });
-

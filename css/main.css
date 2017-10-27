@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 span {
   display: inline-block;
   padding: 5px;
