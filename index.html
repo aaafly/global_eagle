@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Suivi de la température</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+<header>
+  <img src=""> - Température
+</header>
+<div id="add-temperature">
+  <label for="temp">Ajouter une température:</label>
+  <div class="loading-indicator">loading...</div>
+  <input id="temp">
+  <button>Ajouter</button>
+</div>
+<hr/>
+<div>
+  <div id="temperatures-list">
+    <h3>Suivis des températures</h3>
+    <div class="loading-indicator">loading...</div>
+    <ul></ul>
+  </div>
+  <div>
+    <h3>Calcule sur la température</h3>
+    <ul>
+      <li><span>Médiane</span><span id="stat-median">loading...</span></li>
+      <li><span>Moyenne</span><span id="stat-middle">loading...</span></li>
+      <li><span>Max</span><span id="stat-max">loading...</span></li>
+      <li><span>Min</span><span id="stat-min">loading...</span></li>
+    </ul>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
