@@ -12,7 +12,7 @@ function JSON_CALLBACK(json) {
       temperature: mid,
       date: val.date
     });
-    html += '<li><span>' + mid + '</span><span>' + val.date + '</span></li>'
+    html += '<li><span>' + mid + ' °C</span><span class="date">' + val.date + '</span></li>'
   });
 
   $('.loading-indicator').hide();
@@ -85,6 +85,6 @@ $('#add-temperature button').click(function () {
       date: date
     });
     calculateStats();
-    $('#temperatures-list ul').prepend('<li><span>' + newTemp + '</span><span>' + date + '</span></li>');
+    $('#temperatures-list ul').prepend('<li><span>' + newTemp + ' °C</span><span class="date">' + date + '</span></li>');
   }
 });

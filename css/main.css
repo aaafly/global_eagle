@@ -1,8 +1,121 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
 .hide {
   display: none;
+}
+
+hr {
+  margin: 40px 0;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+header {
+  background-color: #7db7e1;
+  height: 50px;
+}
+
+header div {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  background-color: #7db7e1;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+#container {
+  padding: 40px 10px 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  min-height: 100vh;
+  background-color: #ffffff;
 }
 
 span {
   display: inline-block;
   padding: 5px;
+}
+
+.left-column {
+  float: left;
+}
+
+.right-column {
+  float: right;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+label {
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#temperatures-list ul {
+  width: 500px;
+}
+
+#temperatures-list li {
+  padding: 5px 5px;
+  font-size: 13px;
+}
+
+#temperatures-list li:nth-child(odd) {
+  background-color: #f4f9fd;
+}
+
+#temperatures-list li .date {
+  float: right;
+  color: #666;
+  font-weight: 200;
+}
+
+#temperatures-stats .pill div {
+  display: inline-block;
+  /*border: 1px solid #7cbe75;*/
+  /*border-radius: 25px;*/
+  margin: 8px 0;
+}
+
+#temperatures-stats .pill span {
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#temperatures-stats .pill span:first-child {
+  border-top: 1px solid #7cbe75;
+  border-bottom: 1px solid #7cbe75;
+  border-left: 1px solid #7cbe75;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #7bc56d;
+  color: white;
+}
+#temperatures-stats .pill span:last-child {
+  border-top: 1px solid #7cbe75;
+  border-bottom: 1px solid #7cbe75;
+  border-right: 1px solid #7cbe75;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #daedcb;
 }
