@@ -7,7 +7,6 @@ weatherResource.getWeatherData(function (weatherData) {
     temps.push(new Temp(temp));
   });
   domHelper.refreshData(temps);
-  console.log(temps)
 });
 
 $('#add-temperature').find('button').click(function () {

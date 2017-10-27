@@ -9,4 +9,4 @@ MathHelper.prototype.calculateMedian = function (values) {
   var highMiddle = Math.ceil((values.length - 1) / 2);
 
   return Math.round((values[lowMiddle] + values[highMiddle]) / 2);
-}
+};

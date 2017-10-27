@@ -6,11 +6,9 @@ WeatherResource.prototype.url = "http://query.yahooapis.com/v1/public/yql?q=sele
 WeatherResource.prototype.getWeatherData = function (callback) {
   $.getJSON(this.url)
     .done(function (json) {
-      console.log("bbbJSON Data: ", json);
       callback(json.query.results.channel.item.forecast);
     })
     .fail(function (jqxhr, textStatus, error) {
-      var err = textStatus + ", " + error;
-      console.log("Request Failed: " + err);
+      console.log('api error', textStatus + ", " + error);
     });
 };

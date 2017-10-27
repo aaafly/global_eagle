@@ -7,13 +7,12 @@ DOMHelper.prototype.refreshData = function (temps) {
   this.hideLoading();
   this.refreshTemps(temps);
   this.refreshStats(temps);
-  console.log('REFRESH DATA');
-}
+};
 
 DOMHelper.prototype.hideLoading = function () {
   $('.loading-indicator').hide();
   $('.waiting-loading').removeClass('hide');
-}
+};
 
 DOMHelper.prototype.refreshTemps = function (temps) {
   var html = '';
@@ -22,7 +21,7 @@ DOMHelper.prototype.refreshTemps = function (temps) {
   });
 
   $('#temperatures-list').find('ul').html(html);
-}
+};
 
 DOMHelper.prototype.refreshStats = function (temps) {
   var max = temps[0].temp;
@@ -44,4 +43,4 @@ DOMHelper.prototype.refreshStats = function (temps) {
   $('#stat-min').html(min + ' °C');
   $('#stat-middle').html((total / temps.length).toFixed(2) + ' °C');
   $('#stat-median').html(this.math.calculateMedian(values).toString() + ' °C');
-}
+};
