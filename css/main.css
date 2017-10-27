@@ -17,38 +17,6 @@ hr {
   background-color: #ccc;
 }
 
-header {
-  position: relative;
-  background-color: #7db7e1;
-  height: 50px;
-}
-
-header div {
-  height: 100%;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  width: 900px;
-  background-color: #7db7e1;
-  font-size: 15px;
-  font-weight: 100;
-}
-
-header img {
-  position: relative;
-  top: 12px;
-  height: 25px;
-}
-
-header span {
-  display: inline-block;
-  position: absolute;
-  height: 12px;
-  line-height: 12px;
-  top: 13px;
-}
-
-
 #container {
   padding: 40px 10px 10px 10px;
   margin-left: auto;
@@ -87,6 +55,53 @@ ul {
   padding: 0;
 }
 
+/**
+ * HEADER
+ */
+
+header {
+  position: relative;
+  background-color: #7db7e1;
+  height: 50px;
+}
+
+header div {
+  height: 100%;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  background-color: #7db7e1;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+header img {
+  position: relative;
+  top: 12px;
+  height: 25px;
+}
+
+header span {
+  display: inline-block;
+  position: absolute;
+  height: 12px;
+  line-height: 12px;
+  top: 13px;
+}
+
+/**
+ * ADD TEMPERATURE
+ */
+
+#add-temperature input {
+
+}
+
+/**
+ * TEMPERATURES LIST
+ */
+
 #temperatures-list ul {
   width: 500px;
 }
@@ -106,10 +121,12 @@ ul {
   font-weight: 200;
 }
 
+/**
+ * TEMPERATURES STATS
+ */
+
 #temperatures-stats .pill div {
   display: inline-block;
-  /*border: 1px solid #7cbe75;*/
-  /*border-radius: 25px;*/
   margin: 8px 0;
 }
 
