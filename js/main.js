@@ -12,7 +12,7 @@ weatherResource.getWeatherData(function (weatherData) {
 
 $('#add-temperature').find('button').click(function () {
   var newTemp = $('#add-temperature').find('input').val();
-  if (!/^\d+$/.test(newTemp)) {
+  if (!/^-?\d+$/.test(newTemp)) {
     // todo show error
     console.log('NOT A NUMBER YO');
   } else {
