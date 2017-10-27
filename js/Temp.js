@@ -17,4 +17,4 @@ function Temp(data) {
   } else {
     this.date = new DateHelper().getCurrentDate();
   }
-};
+}
